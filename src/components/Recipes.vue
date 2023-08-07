@@ -1,10 +1,8 @@
 <template>
   <div class="new-recipe">
-    <p>{{ recipe.text }}</p>
-    <label>{{ recipe.typeOf }}</label>
-    <div>
-      <input type="number" /><p>$</p>
-    </div>
+    <p>{{ recipe.type }} {{ recipe.cost }} $</p>
+
+
   </div>
 </template>
 
@@ -15,4 +13,9 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  .new-recipe {
+    display: flex;
+    border: solid white;
+  }
+</style>
